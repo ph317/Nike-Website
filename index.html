@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/nike.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">News & Accesories</a></li>
+                    <li><a href="">Men</a></li>
+                    <li><a href="">Women</a></li>
+                    <li><a href="">Kids</a></li>
+                    <li><a href="">Sale</a></li>
+                </ul>
+            </nav>
+            <!-- <img src="images/menu.png" class="menu-icon" onclick="togglemenu()"> -->
+            <img src="images/fav.png" class="fav">
+            <img src="images/cart.png" class="fav">
+        </div>
+            
+        <div class="row">
+            <div class="col-1">
+                <h2>Air Jordan 1 High</h2>
+                <h3>Men's Shoes</h3>
+                <p>M 10 / W 11.5</p>
+                <h4>$120</h4>
+                <button type="button">Add to Bag<img src="images/arrow.png"></button>
+                <img src="images/fav.png" class="fav1">
+                <p class="details"><br>● &nbsp; Shown: White/Black/Red</p>
+                <p class="details">● &nbsp; Style: 4280</p>
+            </div>
+            
+            <div class="col-2">
+                <img src="images/aj1bg.png" class="aj1">
+                <div class="color-box"></div>      
+            </div>
+            
+        </div>
+
+        <div class="social-links">
+            <img src="images/fb.png">
+            <img src="images/tw.png">
+            <img src="images/ig.png">
+        </div>
+    </div>
+    
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "130px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>
